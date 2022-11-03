@@ -13,7 +13,6 @@
 </head>
 
 <body>
-   <%-include('template/header'); %>
    
    <img src="img1.png" alt="" class="img1">
    <div class="container2">
@@ -25,31 +24,37 @@
                        <div>
                          <br>
                            <label>Ingrese su nombre<span class="text-danger"><b>*</b></span></label><br>
-                           <input type="text" id="nombre" placeholder="Tu nombre">
+                           <input class="form-control form-control-lg" type="text" placeholder="Tu nombre" id="nombre">
                        </div>
                        <div>
                          <br>
                          <label>Ingrese la cantidad de dinero que quiere apostar<span class="text-danger"><b>*</b></span></label><br>
-                         <input type="number" id="cdinero" placeholder="cantidad de dinero">
+                         <input class="form-control form-control-lg" type="number" placeholder="cantidad de dinero" id="cdinero">
                      </div>
-                   <label><p class="texto-input">Seleccione una de las opciones<span class="text-danger"><b>*</b></span></p>
-                       <select name="" id="opciones" class="input-style">
-                         <option value="list1">1</option>
-                         <option value="list2">2</option>
+                     <!-- Large input -->
+               <br>
+
+                   <label><p class="texto-input">Seleccione una de las opciones (1 = cara 2 = sello)<span class="text-danger"><b>*</b></span></p>
+                       <select name="" id="opciones" class="form-control form-control-lg">
+                         <option value="1">1</option>
+                         <option value="2">2</option>
                        </select>
                        </label>
-                   <div class="ingresar">
+                   <div class="buttons">
+                    <br>
                        <button type="button" class="btn btn-dark" id="boton">Ver resultado</button>
-                     </div>
-                     <br>
-                     <div class="ingresar">
-                        <a class="nav-link" href="/Hv1"><button type="button" class="btn btn-dark" id="boton">Volver a jugar</button></a>
-                     </div>
+
+                        <a class="nav-link" href="/Hv1"><button type="button" class="btn btn-dark" id="boton2">Volver a jugar</button></a>
+                    
+                    </div>
                    </div>
                </div>
            </form>
        </div>
    </div>
+   
+
+   <%-include('template/footer'); %>
 <!-- JS -->
 <script src="./c.js" type="text/javascript"></script>
 </body>

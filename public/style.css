@@ -13,8 +13,8 @@ body{
   ) fixed;
 }
 .container{
-  background-color: #1f1717;
-  width: 50px;
+  background-color: #886f8f;
+  width: 400px;
   padding: 50px;
   position: absolute;
   transform: translate(-50%,-50%);
@@ -27,7 +27,9 @@ body{
 }
 
 .container2{
-  background-color: #ffffff;
+  background-color:#b7a7bb;
+  font-size: 20px;
+  height: 95%;
   width: 400px;
   padding: 50px;
   position: absolute;
@@ -112,4 +114,7 @@ button{
 #reset-button{
   background-color: #ffffff;
   color: #424ae0;
+}
+#boton2{
+  left:  50px;
 }

@@ -7,21 +7,22 @@ boton.addEventListener('click',()=>{
 
         let maquina=Math.floor(Math.random() * 2)+1;
           
-            
+            	alert(`La cantidad que ha apostado es : $${parseInt(dinero)}`);
 
-            	alert("La cantidad que ha apostado es: $"+dinero+"\n");
-            	
+            	console.log(parseInt(maquina))
 
-                if (opciones==maquina){
-                    alert("Felicidades" +nombre+ "usted ha ganado, la opcion de la maquina fue: "+maquina+ " \n");
+                if (opciones==parseInt(maquina)){
+                    alert("Felicidades " +nombre+ " usted ha ganado, la opcion de la maquina fue: "+maquina+ " \n");
                     Suma = Suma+dinero;
-                alert("La cantidad de dinero que ha sumado es: "+Suma+" \n");
+                alert(`La cantidad de dinero que ha sumado es: ${parseInt(Suma)}`);
+                
                 }
 
                 else{
-                    alert(":( Perdiste intentalo de nuevo "+nombre);
+                    alert(":( Perdiste " + nombre + " intentalo de nuevo ");
                     Resta= Resta-Suma;
-                alert("La cantidad de dinero que tiene acumulado hasta ahora es: "+Resta+" \n");
+                alert(`La cantidad de dinero que tiene acumulado hasta ahora es:  ${parseInt(Resta)}`);
+                
                 }
              }
             )
